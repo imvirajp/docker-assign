@@ -1,14 +1,14 @@
 const express = require("express");
 const request = require("request");
 const app = express();
-const PORT = 5000;
+const PORT = 3000;
 
 app.get("/", (req, res) => {
   res.send("Hello!");
 });
 
 app.get("/todos", (req, res) => {
-  request.get(process.env.TODO_URL, (error, response, body) => {
+  request.get(process.env.TODO_DNS, (error, response, body) => {
     res.send(response.body);
   });
 });

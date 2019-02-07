@@ -5,6 +5,6 @@ services:
   web:
     build: ./web_app
     ports:
-      - "5000:5000"
+      - "3000:3000"
     environment:
-      - TODO_URL=http://todo:8080/todos
+      - TODO_DNS=http://todo:8080/todos
