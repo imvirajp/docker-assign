@@ -1,0 +1,10 @@
+version: "3"
+services:
+  todo:
+    build: ./todo_app
+  web:
+    build: ./web_app
+    ports:
+      - "5000:5000"
+    environment:
+      - TODO_URL=http://todo:8080/todos

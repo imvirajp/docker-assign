@@ -1,3 +1,3 @@
 # Docker-compose
 
-NodeJs app
+Todo app with java-springboot backend and node-js app frontend
