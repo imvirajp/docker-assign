@@ -2,3 +2,7 @@
 */.idea
 .*
 *.iml
+**/gradle
+**/build
+**/bin
+**/todos/todos.txt

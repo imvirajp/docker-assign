@@ -2,9 +2,11 @@ version: "3"
 services:
   todo:
     build: ./todo_app
+    volumes:
+      - ./todo_app/todos/todos.txt:/app/todos.txt
   web:
     build: ./web_app
     ports:
       - "3000:3000"
     environment:
-      - TODO_DNS=http://todo:8080/todos
+      - TODO_DNS=http://todo:8080
